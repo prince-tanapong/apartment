@@ -1,0 +1,63 @@
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+.htaccess
+*.py[cod]
+*.swp
+*.log
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+box
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+coverage.xml
+*.out
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+.vagrant
+.pyenv
+*.db
+fabsettings.py
+
+#media folder
+media
+assets
+
+boxes/
+pronto_dashboard/pronto_dashboard/default.db
+
+# Angular ignore
+logs/
+node_modules/
