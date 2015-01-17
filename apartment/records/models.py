@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class renters(models.Model):
+class Renter(models.Model):
     first_name = models.CharField(
         null=False,
         blank=False,
@@ -24,31 +24,31 @@ class renters(models.Model):
     personal_id = models.CharField(
         null=False,
         blank=False,
-        max_length=300
+        max_length=100
     )
 
     address = models.CharField(
         null=False,
         blank=False,
-        max_length=300
+        max_length=100
     )
 
     telephon_number = models.CharField(
         null=False,
         blank=False,
-        max_length=300
+        max_length=100
     )
 
     email = models.EmailField(
         null=True,
         blank=True,
-        max_length=254
+        max_length=100
     )
 
     work_place = models.CharField(
         null=True,
         blank=True,
-        max_length=20
+        max_length=100
     )
 
     move_in_date = models.DateField(
