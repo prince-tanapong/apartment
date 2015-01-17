@@ -1,0 +1,65 @@
+from django.db import models
+
+
+# Create your models here.
+class renters(models.Model):
+    first_name = models.CharField(
+        null=False,
+        blank=False,
+        max_length=100
+    )
+
+    last_name = models.CharField(
+        null=False,
+        blank=False,
+        max_length=100
+    )
+
+    nick_name = models.CharField(
+        null=False,
+        blank=False,
+        max_length=100
+    )
+
+    personal_id = models.CharField(
+        null=False,
+        blank=False,
+        max_length=300
+    )
+
+    address = models.CharField(
+        null=False,
+        blank=False,
+        max_length=300
+    )
+
+    telephon_number = models.CharField(
+        null=False,
+        blank=False,
+        max_length=300
+    )
+
+    email = models.EmailField(
+        null=True,
+        blank=True,
+        max_length=254
+    )
+
+    work_place = models.CharField(
+        null=True,
+        blank=True,
+        max_length=20
+    )
+
+    move_in_date = models.DateField(
+        null=False,
+        blank=False,
+    )
+
+    move_out_date = models.DateField(
+        null=True,
+        blank=True,
+    )
+
+    def __unicode__(self):
+        return '%s %s' % (self.first_name, self.last_name)
